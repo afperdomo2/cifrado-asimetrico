@@ -4,22 +4,21 @@
 
 #### ¿Qué son las claves públicas y privadas?
 
-Las claves publicas y privadas hacen parte del criptosistema asimétrico. En este criptosistema se crea un par de claves relacionadas matemáticamente (la clave publica y la clave privada). Este par de claves de usan para encriptar y desencriptar información o mensajes, permitiendo a los usuarios intercambiar información de forma segura (Paredes, G. G, 2006).
+Las claves públicas y privadas hacen parte del criptosistema asimétrico. En este criptosistema se crea un par de claves relacionadas matemáticamente (la clave pública y la clave privada). Este par de claves de usan para encriptar y desencriptar información o mensajes, permitiendo a los usuarios intercambiar información de forma segura (Paredes, G. G, 2006).
 
-Si un usuario genera el par de claves, este puede compartir la clave publica para que los demás usuarios puedan intercambiar mensajes cifrados, esto ayuda a que la información no pueda ser leída o interpretada por terceros y se conserve su confidencialidad. Una vez el usuario recibe el mensaje cifrado, se hace uso de la clave privada para descifrarlo. Para realizar el proceso de cifrado o encriptación y desencriptación, se debe hacer uso o implementación de algoritmos de cifrado, uno de estos es RSA  9Rivest-Shamir-Adleman). Este es un algoritmo usado en criptográfica de clave publica y se basa en la dificultad de factorizar grandes números primos, a través del uso de las dos claves mencionadas anteriormente (Hernández Encinas, L, 2005).
-
+Si un usuario genera el par de claves, este puede compartir la clave pública para que los demás usuarios puedan intercambiar mensajes cifrados, esto ayuda a que la información no pueda ser leída o interpretada por terceros y se conserve su confidencialidad. Una vez el usuario recibe el mensaje cifrado, se hace uso de la clave privada para descifrarlo. Para realizar el proceso de cifrado o encriptación y desencriptación, se debe hacer uso o implementación de algoritmos de cifrado, uno de estos es RSA (Rivest-Shamir-Adleman). Este es un algoritmo usado en criptográfica de clave pública y se basa en la dificultad de factorizar grandes números primos, a través del uso de las dos claves mencionadas anteriormente (Hernández Encinas, L, 2005).
 
 #### ¿Qué es la firma digital y cuál es su importancia?
 
-La firma digital es otra funcionalidad que se puede realizar usando los criptosistemas de clave pública, como se mencionó en la pregunta anterior. Para crear una firma digital, el usuario debe contar con una clave publica y privada relacionadas matemáticamente. El usuario puede hacer uso de su clave privada para firmar documentos, contratos, mensajes, certificados digitales, archivos, entre otros. Cualquier usuario que tenga acceso a la clave publica, puede validar la autenticidad de la firma digital aplicada a los documentos, garantizado que la información o los documentos no han sido alterados (García, F. Y. H, 2018).
+La firma digital es otra funcionalidad que se puede realizar usando los criptosistemas de clave pública, como se mencionó en la pregunta anterior. Para crear una firma digital, el usuario debe contar con una clave pública y privada relacionadas matemáticamente. El usuario puede hacer uso de su clave privada para firmar documentos, contratos, mensajes, certificados digitales, archivos, entre otros. Cualquier usuario que tenga acceso a la clave publica, puede validar la autenticidad de la firma digital aplicada a los documentos, garantizado que la información o los documentos no han sido alterados (García, F. Y. H, 2018).
 
 ---
 
 ### 🔏Criptosistemas de clave pública
 
-#### 1.	¿Qué es el criptosistema de clave pública?
+#### 1. ¿Qué es el criptosistema de clave pública?
 
-Es también conocido como criptografía o cifrado asimétrico. Es un sistema criptográfico que hace uso de un par de claves (publica y privada) relacionadas matemáticamente, a diferencia que el sistema simétrico que solo usa una (Franchi, M. R, 2012).
+Es también conocido como criptografía o cifrado asimétrico. Es un sistema criptográfico que hace uso de un par de claves (pública y privada) relacionadas matemáticamente, a diferencia que el sistema simétrico que solo usa una (Franchi, M. R, 2012).
 
 Algunos usos que se le pueden dar con la implementación de este criptosistema son los siguientes:
 
@@ -27,10 +26,18 @@ Algunos usos que se le pueden dar con la implementación de este criptosistema s
 - Generación y validación de firmas digitales, para firmar documentos, archivos, certificados, etc
 - Autenticación para poder confirmar la identificación de una de las partes (o varias)
 
+#### 2. ¿Cómo funciona y cuáles son sus algoritmos representativos?
 
-#### 2.	¿Cómo funciona y cuáles son sus algoritmos representativos?
+##### Funcionamiento
 
-#### 3.	Ventajas, desventajas y diferencias con el criptosistema simétrico
+Primero se debe seleccionar un algoritmo de encriptación asimétrico como puede ser RSA (Rivest-Shamir-Adleman) o DSA (Digital Signature Algorithm) que son los más conocidos. Luego con el algoritmo seleccionado, se deben crear el par de claves (pública y privada) relacionadas matemáticamente. Esto permite que la información cifrada con una clave, puede ser descifrada con la otra (Hernández Encinas, L, 2005).
+
+##### Algorítmos
+
+- RSA (Rivest-Shamir-Adleman): Este es un algoritmo usado en criptográfica de clave pública y se basa en la dificultad de factorizar grandes números primos, a través del uso de las dos claves mencionadas anteriormente (Hernández Encinas, L, 2005)
+- DSA (Digital Signature Algorithm): 
+
+#### 3. Ventajas, desventajas y diferencias con el criptosistema simétrico
 
 | Característica                  | Cifrado Simétrico                                   | Cifrado Asimétrico                                                                           |
 | ------------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -42,10 +49,6 @@ Algunos usos que se le pueden dar con la implementación de este criptosistema s
 | **Ejemplo de Aplicación**       | Encriptación de archivos locales                    | SSL/TLS para transacciones seguras en línea                                                  |
 | **Eficiencia Energética**       | Más eficiente para grandes cantidades de datos      | Menos eficiente para grandes volúmenes de datos debido a la complejidad computacional        |
 | **Ejemplo de Escenario de Uso** | Copias de seguridad de datos                        | Autenticación segura en comunicaciones en línea                                              |
-
-#### 4.	Caso práctico de aplicación (qué algoritmo, dónde y cómo usarlo)
-
-#### 5.	Observaciones y recomendaciones para implementar el criptosistema
 
 ---
 
