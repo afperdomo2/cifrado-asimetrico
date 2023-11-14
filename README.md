@@ -10,7 +10,7 @@ Si un usuario genera el par de claves, este puede compartir la clave pública pa
 
 #### ¿Qué es la firma digital y cuál es su importancia?
 
-La firma digital es otra funcionalidad que se puede realizar usando los criptosistemas de clave pública, como se mencionó en la pregunta anterior. Para crear una firma digital, el usuario debe contar con una clave pública y privada relacionadas matemáticamente. El usuario puede hacer uso de su clave privada para firmar documentos, contratos, mensajes, certificados digitales, archivos, entre otros. Cualquier usuario que tenga acceso a la clave publica, puede validar la autenticidad de la firma digital aplicada a los documentos, garantizado que la información o los documentos no han sido alterados (García, F. Y. H, 2018).
+La firma digital es otra funcionalidad que se puede realizar usando los criptosistemas de clave pública, como se mencionó en la pregunta anterior. Para crear una firma digital, el usuario debe contar con una clave pública y privada relacionadas matemáticamente. El usuario puede hacer uso de su clave privada para firmar documentos, contratos, mensajes, certificados digitales, archivos, entre otros. Cualquier usuario que tenga acceso a la clave pública, puede validar la autenticidad de la firma digital aplicada a los documentos, garantizado que la información o los documentos no han sido alterados (García, F. Y. H, 2018).
 
 ---
 
@@ -23,19 +23,19 @@ Es también conocido como criptografía o cifrado asimétrico. Es un sistema cri
 Algunos usos que se le pueden dar con la implementación de este criptosistema son los siguientes:
 
 - Cifrado y descifrado de mensajes
-- Generación y validación de firmas digitales, para firmar documentos, archivos, certificados, etc
+- Generación y validación de firmas digitales, para firmar documentos, archivos, certificados, etc.
 - Autenticación para poder confirmar la identificación de una de las partes (o varias)
 
 #### 2. ¿Cómo funciona y cuáles son sus algoritmos representativos?
 
-##### Funcionamiento
+##### 2.1 Funcionamiento
 
 Primero se debe seleccionar un algoritmo de encriptación asimétrico como puede ser RSA (Rivest-Shamir-Adleman) o DSA (Digital Signature Algorithm) que son los más conocidos. Luego con el algoritmo seleccionado, se deben crear el par de claves (pública y privada) relacionadas matemáticamente. Esto permite que la información cifrada con una clave, puede ser descifrada con la otra (Hernández Encinas, L, 2005).
 
-##### Algorítmos
+##### 2.2 Algoritmos
 
 - RSA (Rivest-Shamir-Adleman): Este es un algoritmo usado en criptográfica de clave pública y se basa en la dificultad de factorizar grandes números primos, a través del uso de las dos claves mencionadas anteriormente (Hernández Encinas, L, 2005)
-- DSA (Digital Signature Algorithm): 
+- DSA (Digital Signature Algorithm): Es un algoritmo criptográfico usado principalmente en la generación y gestión de firmas digitales.
 
 #### 3. Ventajas, desventajas y diferencias con el criptosistema simétrico
 
