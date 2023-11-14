@@ -32,6 +32,17 @@ Algunos usos que se le pueden dar con la implementación de este criptosistema s
 
 #### 3.	Ventajas, desventajas y diferencias con el criptosistema simétrico
 
+| Característica                  | Cifrado Simétrico                                   | Cifrado Asimétrico                                                                           |
+| ------------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Claves**                      | Usa una sola clave para cifrado y descifrado        | Par de claves relacionadas matemáticamente: pública y privada                                |
+| **Distribución de Claves**      | Es más difícil de gestionar de manera segura        | La clave pública puede ser compartida abiertamente. La clave privada debe mantenerse secreta |
+| **Seguridad**                   | Menos seguro si las claves son comprometidas        | Más seguro en términos de distribución de claves                                             |
+| **Ejemplos de Algoritmos**      | DES, AES                                            | RSA, ECC                                                                                     |
+| **Uso Común**                   | Transferencia segura de grandes cantidades de datos | Establecimiento seguro de conexiones y autenticación                                         |
+| **Ejemplo de Aplicación**       | Encriptación de archivos locales                    | SSL/TLS para transacciones seguras en línea                                                  |
+| **Eficiencia Energética**       | Más eficiente para grandes cantidades de datos      | Menos eficiente para grandes volúmenes de datos debido a la complejidad computacional        |
+| **Ejemplo de Escenario de Uso** | Copias de seguridad de datos                        | Autenticación segura en comunicaciones en línea                                              |
+
 #### 4.	Caso práctico de aplicación (qué algoritmo, dónde y cómo usarlo)
 
 #### 5.	Observaciones y recomendaciones para implementar el criptosistema
