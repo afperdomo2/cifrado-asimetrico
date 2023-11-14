@@ -19,6 +19,15 @@ La firma digital es otra funcionalidad que se puede realizar usando los criptosi
 
 #### 1.	¿Qué es el criptosistema de clave pública?
 
+Es también conocido como criptografía o cifrado asimétrico. Es un sistema criptográfico que hace uso de un par de claves (publica y privada) relacionadas matemáticamente, a diferencia que el sistema simétrico que solo usa una (Franchi, M. R, 2012).
+
+Algunos usos que se le pueden dar con la implementación de este criptosistema son los siguientes:
+
+- Cifrado y descifrado de mensajes
+- Generación y validación de firmas digitales, para firmar documentos, archivos, certificados, etc
+- Autenticación para poder confirmar la identificación de una de las partes (o varias)
+
+
 #### 2.	¿Cómo funciona y cuáles son sus algoritmos representativos?
 
 #### 3.	Ventajas, desventajas y diferencias con el criptosistema simétrico
@@ -37,3 +46,4 @@ Hernández Encinas, L. (2005). El criptosistema RSA. RA-MA Editorial. Obtenido d
 
 García, F. Y. H. (2018). Análisis de la firma digital con base en la infraestructura de clave pública. Hamut´ ay, 5(2), 95-105. Obtenido de https://dialnet.unirioja.es/servlet/articulo?codigo=6801245
 
+Franchi, M. R. (2012). Algortimos de encriptación de clave asimétrica (Doctoral dissertation, Universidad Nacional de La Plata). Obtenido de http://sedici.unlp.edu.ar/handle/10915/26137
