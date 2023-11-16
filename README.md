@@ -50,6 +50,81 @@ Primero se debe seleccionar un algoritmo de encriptación asimétrico como puede
 | **Eficiencia Energética**       | Más eficiente para grandes cantidades de datos      | Menos eficiente para grandes volúmenes de datos debido a la complejidad computacional        |
 | **Ejemplo de Escenario de Uso** | Copias de seguridad de datos                        | Autenticación segura en comunicaciones en línea                                              |
 
+#### 4. Caso práctico de aplicación (qué algoritmo, dónde y cómo usarlo)
+
+A continuación, se realiza un caso práctico de criptográfica asimétrica, usando Python 3:
+
+Primero se debe instalar la librería de **pycryptodome** en la carpeta donde se vaya a realizar el ejercicio.
+
+```python
+pip install pycryptodome
+```
+
+Luego, se procede a crear el archivo de Python:
+
+🗃️**Archivo:** cifrado_asimetrico.py
+
+```python
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
+
+# 1. Cifrado
+
+# Generar una nueva clave RSA de 2048 bits
+clave_privada = RSA.generate(2048)
+clave_publica = clave_privada.publickey()
+
+# Guardar la clave pública en un archivo PEM
+clave_publica_path = "clave_publica.pem"
+with open(clave_publica_path, "wb") as archivo_clave_publica:
+    archivo_clave_publica.write(clave_publica.export_key())
+
+# Guardar la clave privada en un archivo PEM (asegúrate de protegerlo adecuadamente)
+clave_privada_path = "clave_privada.pem"
+with open(clave_privada_path, "wb") as archivo_clave_privada:
+    archivo_clave_privada.write(clave_privada .export_key())
+
+# Cifrar un mensaje utilizando la clave pública
+mensaje = "Esto es un mensaje cifrado con criptografía asimétrica y RSA"
+mensaje_bytes = mensaje.encode("utf-8")
+
+# Crear un cifrador con el algoritmo de cifrado PKCS1_OAEP y la clave pública
+cifrador = PKCS1_OAEP.new(clave_publica)
+
+# Aplicar el cifrado al mensaje
+mensaje_cifrado = cifrador.encrypt(mensaje_bytes)
+
+# Guardar el mensaje cifrado en un archivo text
+mensaje_cifrado_path = "mensaje_cifrado.txt"
+with open(mensaje_cifrado_path, "wb") as archivo_cifrado:
+    archivo_cifrado.write(mensaje_cifrado)
+
+# 2. Decifrado
+
+# Cargar la clave privada desde un archivo PEM
+clave_privada_path = "clave_privada.pem"
+with open(clave_privada_path, "rb") as archivo_clave_privada:
+    clave_privada = RSA.import_key(archivo_clave_privada.read())
+
+# Descifrar el mensaje cifrado desde un archivo binario
+mensaje_cifrado_path = "mensaje_cifrado.txt"
+with open(mensaje_cifrado_path, "rb") as archivo_cifrado:
+    mensaje_cifrado = archivo_cifrado.read()
+
+# Crear un objeto descifrador utilizando la clave privada
+cifrador = PKCS1_OAEP.new(clave_privada)
+
+# Descifrar el mensaje cifrado
+mensaje_descifrado_bytes = cifrador.decrypt(mensaje_cifrado)
+
+# Decodificar el mensaje descifrado a una cadena de texto
+mensaje_descifrado = mensaje_descifrado_bytes.decode("utf-8")
+
+# Imprimir el mensaje descifrado
+print("Mensaje descifrado:")
+print(mensaje_descifrado)
+```
+
 ---
 
 ### 📚Bibliofrafía
