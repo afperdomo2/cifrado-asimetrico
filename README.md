@@ -34,8 +34,10 @@ Primero se debe seleccionar un algoritmo de encriptación asimétrico como puede
 
 ##### 2.2 Algoritmos
 
-- RSA (Rivest-Shamir-Adleman): Este es un algoritmo usado en criptográfica de clave pública y se basa en la dificultad de factorizar grandes números primos, a través del uso de las dos claves mencionadas anteriormente (Hernández Encinas, L, 2005)
+- RSA (Rivest-Shamir-Adleman): Este es un algoritmo usado en criptográfica de clave pública y se basa en la dificultad de factorizar grandes números primos, a través del uso de las dos claves mencionadas anteriormente.
 - DSA (Digital Signature Algorithm): Es un algoritmo criptográfico usado principalmente en la generación y gestión de firmas digitales.
+- ElGamal: Este es un algoritmo de cifrado y firma, basado en la dificultad de calcular logaritmos discretos en un cuerpo finito.
+- ECC (Elliptic Curve Cryptography): Algoritmo para establecimiento de claves seguras. Ofrece la misma seguridad que RSA, pero lo realiza con claves más cortas, haciéndolo eficiente en términos de uso de recursos.
 
 #### 3. Ventajas, desventajas y diferencias con el criptosistema simétrico
 
@@ -44,7 +46,7 @@ Primero se debe seleccionar un algoritmo de encriptación asimétrico como puede
 | **Claves**                      | Usa una sola clave para cifrado y descifrado        | Par de claves relacionadas matemáticamente: pública y privada                                |
 | **Distribución de Claves**      | Es más difícil de gestionar de manera segura        | La clave pública puede ser compartida abiertamente. La clave privada debe mantenerse secreta |
 | **Seguridad**                   | Menos seguro si las claves son comprometidas        | Más seguro en términos de distribución de claves                                             |
-| **Ejemplos de Algoritmos**      | DES, AES                                            | RSA, ECC                                                                                     |
+| **Ejemplos de Algoritmos**      | DES, AES, Twofish, Chacha20                         | RSA, ElGamal, DSA, Diffie-Hellman, ECC, Lattice-based-cryptography                           |
 | **Uso Común**                   | Transferencia segura de grandes cantidades de datos | Establecimiento seguro de conexiones y autenticación                                         |
 | **Ejemplo de Aplicación**       | Encriptación de archivos locales                    | SSL/TLS para transacciones seguras en línea                                                  |
 | **Eficiencia Energética**       | Más eficiente para grandes cantidades de datos      | Menos eficiente para grandes volúmenes de datos debido a la complejidad computacional        |
